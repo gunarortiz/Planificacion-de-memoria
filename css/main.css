@@ -4,13 +4,18 @@
   padding:50px;
   padding-bottom: 65px;
   color:white;
-  margin-bottom: 150px;
+  margin-bottom: 120px;
 }
-h1{
+h2{
   color:white !important;
   }
 body{
   margin: 0;
+}
+ul{
+  width: 180px;
+    margin-right: auto;
+    margin-left: auto;
 }
 .advertencia{
   width:500px;

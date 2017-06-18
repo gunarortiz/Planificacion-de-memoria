@@ -1,45 +1,51 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Proyecto</title>
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/paper.css">
 
-  </head>
-  <body>
-    <div class="alert alert-info advertencia " id="advertencia">
-      <strong>Seleccione una opcion</strong>
-    </div>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Proyecto</title>
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/paper.css">
 
-    <div class="titulo">
-    <h1>Proyecto Inf-151
+</head>
+
+<body>
+  <div class="alert alert-info advertencia " id="advertencia">
+    <strong>Seleccione una opcion</strong>
+  </div>
+
+  <div class="titulo">
+    <h2>Proyecto Inf-151
     <i class="glyphicon glyphicon-list-alt"></i>
-    </h1>
+  </h2>
 
   </div>
-    <div class="container">
+  <div class="container">
 
-      <div class="row">
-          <div class="col-lg-4">
-            <button type="button" class="btn btn-primary btn-lg btn-circle" name="button"></button>
-          </div>
-          <div class="col-lg-4">
-<button type="button" class="btn btn-warning btn-lg btn-circle" name="button"></button>
-          </div>
-          <div class="col-lg-4">
-<button type="button" class="btn btn-success btn-lg btn-circle" name="button"></button>
-          </div>
+    <div class="row">
+      <div class="col-lg-4">
+        <h5>Planificacion de procesos</h5>
+        <ul>
+          <a href="pages/p/fcfs.html"><li>FCFS</li></a>
+        </ul>
       </div>
+      <div class="col-lg-4">
+        <h5>Planificacion de memoria</h5>
+      </div>
+      <div class="col-lg-4">
+        <h5>Planificacion de discos</h5>
+      </div>
+    </div>
 
-</div>
-<script src="js/jquery.js"></script>
+  </div>
+  <script src="js/jquery.js"></script>
   <script type="text/javascript">
-    var x=$("#advertencia").fadeOut("slow");
+    $("#advertencia").fadeOut("slow");
   </script>
 
   <script type="text/javascript" src="js/bootstrap.js"></script>
-  </body>
+</body>
+
 </html>

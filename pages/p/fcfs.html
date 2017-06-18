@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <script src='../../js/Chart.min.js'></script>
+</head>
+
+<body>
+
+
+<canvas id="buyers" width="600" height="400"></canvas>
+
+  <script src="../../js/jquery.js"></script>
+  <script type="text/javascript">
+
+  var tt=[];
+  var ee=[];
+  var ii=[];
+    for(var j=1; j<=20;j++)
+    {
+      var ti = Math.random();
+      ti=ti.toFixed(2)*100;
+
+      var tf = Math.random();
+      tf=tf.toFixed(2)*100;
+
+      var t=tf-ti;
+      var e=t-tf;
+      var i=tf/t;
+
+      tt[j-1]=t;
+      ee[j-1]=e;
+      ii[j-1]=i;
+
+    }
+
+
+        // line chart data
+        var buyerData = {
+            labels : ["1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19","20"],
+            datasets : [
+            {
+                fillColor : "rgba(1,255,1,0.4)",
+                strokeColor : "#ACC26D",
+                pointColor : "#fff",
+                pointStrokeColor : "#9DB86D",
+                data : tt
+            },  {
+                  fillColor : "rgba(255,1,1,0.4)",
+                  strokeColor : "#ACC26D",
+                  pointColor : "#fff",
+                  pointStrokeColor : "#9DB86D",
+                  data : ee
+              },{
+                    fillColor : "rgba(1,1,255,0.2)",
+                    strokeColor : "#ACC26D",
+                    pointColor : "#fff",
+                    pointStrokeColor : "#9DB86D",
+                    data : ii
+                }
+        ]
+        }
+        // get line chart canvas
+        var buyers = document.getElementById('buyers').getContext('2d');
+
+
+        new Chart(buyers).Line(buyerData);
+  </script>
+</body>
+
+</html>
